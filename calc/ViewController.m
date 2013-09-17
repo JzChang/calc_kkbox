@@ -119,13 +119,11 @@
     else {
         if ([[sender currentTitle] isEqualToString:@"."]) {
             // 檢查字串是否包含小數點
-            if ([self.displayLabel.text rangeOfString:@"."].location == NSNotFound) {
-                self.displayLabel.text = [self.displayLabel.text stringByAppendingString:@"."];
+            if ([self.displayLabel.text rangeOfString:@"."].location != NSNotFound) {
+                return;
             }
         }
-        else {
-            self.displayLabel.text = [self.displayLabel.text stringByAppendingString:[sender currentTitle]];
-        }
+        self.displayLabel.text = [self.displayLabel.text stringByAppendingString:[sender currentTitle]];
     }
     
     isTapOperator = NO;
