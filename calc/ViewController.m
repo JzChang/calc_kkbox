@@ -8,19 +8,17 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    BOOL isClickNumber;
+    BOOL isClickPoint;
+    BOOL isClickCalac;
+    BOOL isClickOp;
+    NSString *calcOp;
+}
 
 @property (strong, nonatomic) NSDecimalNumber *calcNum1, *calcNum2;
 
-
 @end
-
-BOOL isClickNumber = NO;
-BOOL isClickPoint = NO;
-BOOL isClickCalac = NO;
-BOOL isClickOp = NO;
-
-NSString *calcOp = @"";
 
 @implementation ViewController
 
@@ -28,9 +26,8 @@ NSString *calcOp = @"";
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-    self.calcNum1 = [NSDecimalNumber decimalNumberWithString:@"0"];
-    self.calcNum2 = [NSDecimalNumber decimalNumberWithString:@"0"];
+
+    [self resetConfig];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,9 +41,20 @@ NSString *calcOp = @"";
     [super dealloc];
 }
 
-- (IBAction)click_num:(UIButton *)sender {
-        
+- (void)resetConfig
+{
+    self.calcNum1 = [NSDecimalNumber decimalNumberWithString:@"0"];
+    self.calcNum2 = [NSDecimalNumber decimalNumberWithString:@"0"];
     
+    isClickNumber = NO;
+    isClickPoint = NO;
+    isClickCalac = NO;
+    isClickOp = NO;
+    calcOp = @"";
+}
+
+- (IBAction)click_num:(UIButton *)sender
+{
     if (!isClickNumber) {
         if ([[sender currentTitle] isEqualToString:@"."]) {
             self.displayLbl.text = @"0.";
@@ -60,9 +68,7 @@ NSString *calcOp = @"";
         else {
             self.displayLbl.text = [sender currentTitle];
             isClickNumber = YES;
-
         }
-
     }
     else {
         if ([[sender currentTitle] isEqualToString:@"."] && !isClickPoint) {
@@ -81,16 +87,23 @@ NSString *calcOp = @"";
         }
     }
     
-    
+    isClickOp = NO;
 }
 
-- (IBAction)click_clear:(UIButton *)sender {
+- (IBAction)click_clear:(UIButton *)sender
+{
     self.displayLbl.text = @"0";
-    isClickPoint = isClickNumber = NO;
+
+    [self resetConfig];
 }
 
-- (IBAction)click_op:(UIButton *)sender {
-    
+- (IBAction)click_op:(UIButton *)sender
+{
+    if (isClickOp) {
+        // 使用者更改計算
+        calcOp = [sender currentTitle];
+        return;
+    }
     
     if (!isClickCalac && ![calcOp isEqualToString:@""]) {
         self.calcNum2 = [NSDecimalNumber decimalNumberWithString:self.displayLbl.text];
@@ -100,25 +113,14 @@ NSString *calcOp = @"";
         self.calcNum1 = [NSDecimalNumber decimalNumberWithString:self.displayLbl.text];
     }
 
-    
     isClickPoint = isClickNumber = NO;
     
-    if ([[sender currentTitle] isEqualToString:@"/"]) {
-        calcOp = @"/";
+    if (calcOp) {
+        [calcOp release];
     }
-    else if ([[sender currentTitle] isEqualToString:@"*"]) {
-        calcOp = @"*";
-    }
-    else if ([[sender currentTitle] isEqualToString:@"-"]) {
-        calcOp = @"-";
-    }
-    else if ([[sender currentTitle] isEqualToString:@"+"]) {
-        calcOp = @"+";
-    }
-
-
-    
-    
+    calcOp = [[sender currentTitle] retain];
+        
+    isClickOp = YES;
 }
 
 - (void)calcNum:(NSString *)op WithNum1:(NSDecimalNumber *)num1 andNum2:(NSDecimalNumber *)num2
@@ -128,8 +130,8 @@ NSString *calcOp = @"";
     if ([op isEqualToString:@"/"]) {
         if ([[num2 stringValue] isEqualToString:@"0"]) {
             self.displayLbl.text = @"ERROR";
-            isClickPoint = isClickNumber = NO;
-
+            
+            [self resetConfig];
             return;
         }
         else {
@@ -151,23 +153,16 @@ NSString *calcOp = @"";
     calcOp = @"";
     isClickCalac = NO;
     
-    
     NSLog(@"= %@", [self.calcNum1 stringValue]);
 }
 
-
-- (IBAction)click_calc:(UIButton *)sender {
-    
+- (IBAction)click_calc:(UIButton *)sender
+{
     isClickCalac = YES;
 
     self.calcNum2 = [NSDecimalNumber decimalNumberWithString:self.displayLbl.text];
     
     [self calcNum:calcOp WithNum1:self.calcNum1 andNum2:self.calcNum2];
-    
-
 }
-
-
-
 
 @end
