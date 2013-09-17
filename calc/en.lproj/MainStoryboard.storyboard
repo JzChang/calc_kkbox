@@ -24,7 +24,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_num:" destination="2" eventType="touchUpInside" id="zER-bv-K5j"/>
+                                    <action selector="tapDigits:" destination="2" eventType="touchUpInside" id="ggP-vt-JGn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3EO-fL-eVP">
@@ -39,7 +39,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_num:" destination="2" eventType="touchUpInside" id="eaZ-Pj-Yf1"/>
+                                    <action selector="tapDigits:" destination="2" eventType="touchUpInside" id="QjI-Aw-N1O"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BzZ-Zg-Ow8">
@@ -54,7 +54,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_num:" destination="2" eventType="touchUpInside" id="joO-Wp-E6B"/>
+                                    <action selector="tapDigits:" destination="2" eventType="touchUpInside" id="6xx-dq-cR6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qQK-6d-7Ts">
@@ -69,7 +69,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_num:" destination="2" eventType="touchUpInside" id="AxB-2v-f6B"/>
+                                    <action selector="tapDigits:" destination="2" eventType="touchUpInside" id="vF0-f4-4Ea"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bQb-Px-3nB">
@@ -84,7 +84,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_num:" destination="2" eventType="touchUpInside" id="L2V-Aj-BR8"/>
+                                    <action selector="tapDigits:" destination="2" eventType="touchUpInside" id="WCO-PN-U0P"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1i7-Ex-6TU">
@@ -99,7 +99,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_op:" destination="2" eventType="touchUpInside" id="EGv-LK-Dxc"/>
+                                    <action selector="tapOperators:" destination="2" eventType="touchUpInside" id="OdU-Xe-GAh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YBP-9M-2Wk">
@@ -114,7 +114,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_num:" destination="2" eventType="touchUpInside" id="xYm-Aj-DpI"/>
+                                    <action selector="tapDigits:" destination="2" eventType="touchUpInside" id="l7G-gl-wwZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="X8G-lO-1yD">
@@ -129,7 +129,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_num:" destination="2" eventType="touchUpInside" id="ffe-8T-Xz9"/>
+                                    <action selector="tapDigits:" destination="2" eventType="touchUpInside" id="fnw-ee-5am"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w9U-wG-vJm">
@@ -144,7 +144,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_num:" destination="2" eventType="touchUpInside" id="uas-PK-gRA"/>
+                                    <action selector="tapDigits:" destination="2" eventType="touchUpInside" id="tdK-Hv-OY5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LHf-mI-xhd">
@@ -159,7 +159,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_op:" destination="2" eventType="touchUpInside" id="bRy-W7-Yp3"/>
+                                    <action selector="tapOperators:" destination="2" eventType="touchUpInside" id="TD7-tH-86N"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uE5-3K-0aE">
@@ -174,7 +174,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_num:" destination="2" eventType="touchUpInside" id="RD6-P8-8Mi"/>
+                                    <action selector="tapDigits:" destination="2" eventType="touchUpInside" id="mem-ih-oq4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dgB-FI-HY3">
@@ -189,7 +189,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_num:" destination="2" eventType="touchUpInside" id="kce-KS-D9J"/>
+                                    <action selector="tapDigits:" destination="2" eventType="touchUpInside" id="Jbo-jt-446"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uN0-qi-ax8">
@@ -204,7 +204,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_op:" destination="2" eventType="touchUpInside" id="lxT-4u-n4A"/>
+                                    <action selector="tapOperators:" destination="2" eventType="touchUpInside" id="M7u-BA-ZDO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="38z-bx-Yah">
@@ -219,7 +219,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_num:" destination="2" eventType="touchUpInside" id="Gkf-4Z-oGv"/>
+                                    <action selector="tapDigits:" destination="2" eventType="touchUpInside" id="TeT-bU-9cr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gKN-JK-tZW">
@@ -234,7 +234,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_calc:" destination="2" eventType="touchUpInside" id="HUc-1q-M4X"/>
+                                    <action selector="tapEqualSign:" destination="2" eventType="touchUpInside" id="iLV-D9-omp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ksc-6C-m75">
@@ -249,7 +249,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_op:" destination="2" eventType="touchUpInside" id="MdQ-ef-sv0"/>
+                                    <action selector="tapOperators:" destination="2" eventType="touchUpInside" id="PnH-Gh-HfO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WoX-I5-GWz">
@@ -272,14 +272,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click_clear:" destination="2" eventType="touchUpInside" id="WpK-c6-ycs"/>
+                                    <action selector="tapClear:" destination="2" eventType="touchUpInside" id="Nq7-dh-w4P"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="displayLbl" destination="WoX-I5-GWz" id="WGL-m8-chS"/>
+                        <outlet property="displayLabel" destination="WoX-I5-GWz" id="216-nV-631"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>

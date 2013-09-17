@@ -11,12 +11,11 @@
 @interface ViewController : UIViewController
 
 
-@property (retain, nonatomic) IBOutlet UILabel *displayLbl;
+@property (retain, nonatomic) IBOutlet UILabel *displayLabel;
 
-- (IBAction)click_num:(UIButton *)sender;
-- (IBAction)click_clear:(UIButton *)sender;
-- (IBAction)click_op:(UIButton *)sender;
-- (IBAction)click_calc:(UIButton *)sender;
-
+- (IBAction)tapDigits:(UIButton *)sender;
+- (IBAction)tapClear:(UIButton *)sender;
+- (IBAction)tapOperators:(UIButton *)sender;
+- (IBAction)tapEqualSign:(UIButton *)sender;
 
 @end
